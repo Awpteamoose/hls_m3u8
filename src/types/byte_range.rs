@@ -351,8 +351,8 @@ macro_rules! impl_from_ranges {
 // stable (`Into<i64> for usize` is reserved for upstream crates ._.)
 impl_from_ranges![u64, u32, u16, u8, usize, i32];
 
-#[must_use]
 impl RangeBounds<usize> for ByteRange {
+	#[must_use]
     fn start_bound(&self) -> Bound<&usize> {
         if let Some(start) = &self.start {
             Bound::Included(start)
