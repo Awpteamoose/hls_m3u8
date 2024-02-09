@@ -21,18 +21,18 @@ travis-ci = { repository = "sile/hls_m3u8" }
 chrono = { version = "0.4", optional = true }
 backtrace = { version = "0.3", features = ["std"], optional = true }
 
-derive_builder = "0.12"
+derive_builder = "0.13"
 hex = "0.4"
 thiserror = "1.0"
 
 derive_more = "0.99"
 shorthand = "0.1"
-strum = { version = "0.25", features = ["derive"] }
+strum = { version = "0.26", features = ["derive"] }
 
 [dev-dependencies]
-pretty_assertions = "0.6"
+pretty_assertions = "1"
 version-sync = "0.9"
-criterion = "0.3.1"
+criterion = "0.5"
 
 [[bench]]
 name = "parse"
