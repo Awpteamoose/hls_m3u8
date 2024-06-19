@@ -21,7 +21,7 @@ travis-ci = { repository = "sile/hls_m3u8" }
 chrono = { version = "0.4", optional = true }
 backtrace = { version = "0.3", features = ["std"], optional = true }
 
-derive_builder = "0.13"
+derive_builder = "0.20"
 hex = "0.4"
 thiserror = "1.0"
 
